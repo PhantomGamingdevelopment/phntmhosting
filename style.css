@@ -1,3 +1,213 @@
-body{
-  
+/* Import Google Font for modern typography */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+/* Base Styling */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background: url('media/image_processing20181012-4-1cpok3x.jpg') no-repeat center center/cover; /* Replace with actual URL */
+    color: #f0f0f0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    overflow-x: hidden;
+    flex-direction: column;
+}
+
+/* Front Page Section */
+.front-page {
+    background: rgba(255, 255, 255, 0.15);
+    padding: 100px 20px;
+    text-align: center;
+    color: #ffffff;
+    backdrop-filter: blur(15px);
+    border-radius: 15px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+    margin-bottom: 30px;
+}
+
+.front-content h1 {
+    font-size: 3.5em;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.front-content p {
+    font-size: 1.2em;
+    font-weight: 300;
+    margin-bottom: 20px;
+    color: #e0e0e0;
+}
+
+.scroll-btn {
+    background: rgba(255, 255, 255, 0.2);
+    color: #ffffff;
+    padding: 12px 28px;
+    border-radius: 25px;
+    font-size: 1em;
+    cursor: pointer;
+    border: none;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+    transition: transform 0.3s ease, background 0.3s ease;
+}
+
+.scroll-btn:hover {
+    background: rgba(255, 255, 255, 0.3);
+    transform: translateY(-3px);
+}
+
+/* Main Container */
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px;
+    width: 85%;
+    max-width: 1200px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 15px;
+    backdrop-filter: blur(10px);
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    text-align: center;
+    margin-top: 30px;
+}
+
+.Title {
+    font-size: 3em;
+    font-weight: 600;
+    color: #ffffff;
+    margin-bottom: 10px;
+}
+
+.undertext {
+    font-size: 1.2em;
+    color: #e0e0e0;
+    font-weight: 300;
+    margin-bottom: 20px;
+}
+
+/* About Us Section */
+.about {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 40px;
+    border-radius: 15px;
+    margin-top: 40px;
+    text-align: center;
+    color: #ffffff;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(10px);
+}
+
+.about h2 {
+    font-size: 2.5em;
+    font-weight: 600;
+    color: #ffffff;
+    margin-bottom: 10px;
+}
+
+.about p {
+    font-size: 1.1em;
+    font-weight: 300;
+    color: #e0e0e0;
+}
+
+/* Cards */
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.card {
+    width: 220px;
+    padding: 25px;
+    background: rgba(255, 255, 255, 0.15);
+    border-radius: 15px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(10px);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.25);
+}
+
+.cardtitle {
+    font-size: 1.5em;
+    color: #ffffff;
+    font-weight: bold;
+}
+
+.cardtext, .cardprice {
+    color: #e0e0e0;
+}
+
+/* Button Styling */
+.btn, .cardbtn {
+    background: rgba(255, 255, 255, 0.2);
+    color: #ffffff;
+    padding: 12px 28px;
+    border-radius: 25px;
+    font-size: 1em;
+    cursor: pointer;
+    border: none;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+    transition: transform 0.3s ease, background 0.3s ease;
+}
+
+.btn:hover, .cardbtn:hover {
+    background: rgba(255, 255, 255, 0.3);
+    transform: translateY(-3px);
+}
+
+/* Footer */
+.footer {
+    width: 100%;
+    text-align: center;
+    padding: 20px;
+    font-size: 0.9em;
+    color: #ffffff;
+    background: rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(10px);
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+    position: relative;
+    bottom: 0;
+}
+
+.footer a {
+    color: #90caf9;
+    text-decoration: none;
+}
+
+.footer a:hover {
+    text-decoration: underline;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+    .container {
+        width: 90%;
+    }
+
+    .cards {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+.availability{
+    color: red;
 }
